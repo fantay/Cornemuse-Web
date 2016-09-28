@@ -14,7 +14,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
-
+        
+        <br/>
         <a href="lister_films">Liste des films</a>
         <br/>
         <a href="liste_serie.html">Liste des séries</a>
@@ -34,10 +35,6 @@
             </c:forEach>
         </div>
         <br/>
-
-        <div>
-            ${piedPage}
-        </div>
 
     </body>
 </html>

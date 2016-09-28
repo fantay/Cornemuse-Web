@@ -30,7 +30,6 @@ public class ListerFilmsServlet extends HttpServlet {
         
         req.setAttribute("titre", "TEST LISTE FILMS");
         req.setAttribute("mesFilms", films);
-        req.setAttribute("piedPage", "Copyright Laurent-2016");
         
         req.getRequestDispatcher("lister_films.jsp").forward(req, resp);
         
