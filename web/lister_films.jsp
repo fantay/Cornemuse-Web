@@ -4,6 +4,7 @@
     Author     : Laurent-LIM
 --%>
 
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -26,10 +27,17 @@
         <br/>
 
         <h1>${titre}</h1>
-        
-        coucou<br/>
-  
-        <a>${piedPage}</a>
+
+        <div>
+            <c:forEach items="${mesFilms}" var="monFilm">
+                ${monFilm.titre}<br/>
+            </c:forEach>
+        </div>
+        <br/>
+
+        <div>
+            ${piedPage}
+        </div>
 
     </body>
 </html>
