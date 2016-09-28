@@ -5,10 +5,23 @@
  */
 package streaming.dao;
 
+import java.util.List;
+import javax.persistence.EntityManager;
+import javax.persistence.Persistence;
+import streaming.entity.Film;
+
 /**
  *
  * @author Laurent-LIM
  */
 public class FilmDAO {
     
+    public List<Film> listerFilms(){
+        
+        EntityManager em = Persistence.createEntityManagerFactory("PU").createEntityManager();
+        
+        List<Film> films = em.createQuery("SELECT f FROM Film f ORDER BY ASC").getResultList();
+        
+        return films;
+    }
 }
