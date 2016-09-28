@@ -20,8 +20,7 @@ public class FilmDAO {
         
         EntityManager em = Persistence.createEntityManagerFactory("PU").createEntityManager();
         
-        List<Film> films = em.createQuery("SELECT f FROM Film f ORDER BY ASC").getResultList();
+        return em.createQuery("SELECT f FROM Film f ORDER BY f.id DESC").getResultList();
         
-        return films;
     }
 }

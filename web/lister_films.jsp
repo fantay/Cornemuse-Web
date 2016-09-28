@@ -1,9 +1,11 @@
+<%-- 
+    Document   : lister_films
+    Created on : 28 sept. 2016, 11:52:10
+    Author     : Laurent-LIM
+--%>
+
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
 <html>
     <head>
         <title>TODO supply a title</title>
@@ -12,7 +14,7 @@ and open the template in the editor.
     </head>
     <body>
 
-        <a href="liste_film.html">Liste des films</a>
+        <a href="lister_films">Liste des films</a>
         <br/>
         <a href="liste_serie.html">Liste des séries</a>
         <br/>
@@ -23,9 +25,11 @@ and open the template in the editor.
         <a href="index.html">Retour au menu</a>
         <br/>
 
-        <h1>Liste des films</h1>
+        <h1>${titre}</h1>
         
-        
+        coucou<br/>
+  
+        <a>${piedPage}</a>
 
     </body>
 </html>
