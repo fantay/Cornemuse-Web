@@ -23,7 +23,7 @@ public class ServletC extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         
-        req.setAttribute("C", "789");
+        req.setAttribute("A", req.getAttribute("A")+"789");
         
         req.getRequestDispatcher("c.jsp").forward(req, resp);
     }

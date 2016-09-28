@@ -15,10 +15,6 @@
         <h1>Page c</h1>
         <div>
             ${A}
-            <br/>
-            ${B}
-            <br/>
-            ${C}
         </div>
     </body>
 </html>
