@@ -4,30 +4,33 @@
     Author     : Laurent-LIM
 --%>
 
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
+    
     <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
+        <c:import url="_HEAD.jsp"/>
     </head>
+    
     <body>
         
-        <div class="titre">
-            TITRE
-        </div>
-        
         <div class="menu">
-            MENU
+            <c:import url="_MENU.jsp"/>
         </div>
-        
+        <br/>
+         <div class="titre">
+            TITRE
+        </div>     
+        <br/>
         <div class="contenu">
             CONTENU
         </div>
-        
+        <br/>
         <div class="pied">
-            PIED
+            <c:import url="_PIED.jsp"/>
         </div>
         
     </body>
+    
 </html>
