@@ -8,7 +8,7 @@
 
 
 <br/>
-<a href="index">Retour au menu</a>
+<a href="index.jsp">Retour au menu</a>
 <br/>
 <a href="lister_films">Liste des films</a>
 <br/>

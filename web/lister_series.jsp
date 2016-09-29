@@ -11,7 +11,7 @@
     
     <head>
         <c:import url="_HEAD.jsp"/>
-        <title>JSP Page</title>
+        <title>Liste des séries</title>
     </head>
     
     <body>

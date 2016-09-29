@@ -8,35 +8,30 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
-
+    
     <head>
         <c:import url="_HEAD.jsp"/>
-        <title>Liste des films</title>
+        <title>index</title>
     </head>
-
+    
     <body>
-
+        
         <div class="menu">
             <c:import url="_MENU.jsp"/>
         </div>
         <br/>
-        <div class="titre">
-            <h1>Liste des films</h1>
+         <div class="titre">
+            ACCEUIL
         </div>     
         <br/>
         <div class="contenu">
             
-            <c:forEach items="${mesFilms}" var="monFilm">
-                ${monFilm.titre}
-                <br/>
-            </c:forEach>
-                
         </div>
         <br/>
         <div class="pied">
             <c:import url="_PIED.jsp"/>
         </div>
-
+        
     </body>
-
+    
 </html>
