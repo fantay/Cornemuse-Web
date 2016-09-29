@@ -12,6 +12,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import streaming.entity.Film;
 
 /**
  *
@@ -28,8 +29,13 @@ public class AjouterFilmServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         
+        Film f = new Film();
+        
+        f.setTitre(req.getParameter("titre"));
+        f.setSynopsis(req.getParameter("synopsis"));
+        f.setAnnee(Integer.valueOf(req.getParameter("anneeprod")));
+        f.setDuree(Integer.valueOf(req.getParameter("duree")));
+        
     }
-
- 
 
 }
