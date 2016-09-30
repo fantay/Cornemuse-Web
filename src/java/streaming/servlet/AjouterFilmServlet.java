@@ -41,7 +41,7 @@ public class AjouterFilmServlet extends HttpServlet {
         
         new FilmService().ajouterFilms(f);
         
-        req.getRequestDispatcher("lister_films").forward(req, resp);
+        resp.sendRedirect("lister_films");
         
     }
 

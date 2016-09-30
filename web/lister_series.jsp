@@ -29,8 +29,8 @@
         <br/>
         <div class="contenu">
             
-            <c:forEach items="${messeries}" var="messeries">
-                ${messeries.titre}
+            <c:forEach items="${mesSeries}" var="mesSeries">
+                ${mesSeries.titre}
                 <br/>
             </c:forEach>
                 

@@ -44,19 +44,6 @@
                 
                 <br/>                
                 <br/>
-                
-                <label>Année de production&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-                <input name="anneeprod" type="text"/>
-                
-                <br/>                
-                <br/>
-                
-                <label>Durée&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                </label>
-                <input name="duree" type="text"/>
-                
-                <br/>                
                 <br/>
                 
                 <input type="submit" value="ajouter"/>

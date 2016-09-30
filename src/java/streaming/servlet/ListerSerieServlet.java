@@ -26,10 +26,12 @@ public class ListerSerieServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         List<Serie> series = new SerieService().lister();
-        
-        req.setAttribute("messeries", series);
+
+        req.setAttribute("mesSeries", series);
 
         req.getRequestDispatcher("lister_series.jsp").forward(req, resp);
     }
+
+
 
 }
