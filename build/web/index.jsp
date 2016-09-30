@@ -20,8 +20,11 @@
             <c:import url="_MENU.jsp"/>
         </div>
         <br/>
+        
+        <h1>ACCEUIL</h1>
+        
          <div class="titre">
-            ACCEUIL
+            
         </div>     
         <br/>
         <div class="contenu">
