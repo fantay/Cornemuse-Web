@@ -38,7 +38,7 @@ public class AjouterSerieServlet extends HttpServlet {
         
         new SerieService().ajouterSerie(s);
         
-        resp.sendRedirect("lister_series");
+        resp.sendRedirect("lister_serie");
                 
     }
 
