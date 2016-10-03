@@ -90,5 +90,9 @@ public class Genre implements Serializable {
     public String toString() {
         return "jpql.entity.Genre[ id=" + id + " ]";
     }
+
+    public static long getSerialVersionUID() {
+        return serialVersionUID;
+    }
     
 }

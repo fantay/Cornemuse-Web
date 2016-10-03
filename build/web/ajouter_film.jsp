@@ -40,6 +40,17 @@
                 <br/>                
                 <br/>
                 
+                <label>Genre&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                <select name="genreID">
+                    <c:forEach items="${listeGenre}" var="genreAct">
+                        <option value="${genreAct.id}">${genreAct.nom}</option>
+                    </c:forEach>
+                </select>
+                
+                <br/>                
+                <br/>
+                
                 <label>Synopsis&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
                 <textarea name="synopsis"></textarea>
