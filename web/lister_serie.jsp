@@ -30,7 +30,9 @@
         <div class="contenu">
             
             <c:forEach items="${mesSeries}" var="mesSeries">
-                ${mesSeries.titre}</a> <a href="supprimer_serie?monID=${mesSeries.id}">Supprimer</a>
+                ${mesSeries.titre} 
+            <a>&nbsp;&nbsp;&nbsp;&nbsp;</a> <a href="supprimer_serie?monID=${mesSeries.id}">Supprimer</a>
+            <a>&nbsp;&nbsp;&nbsp;&nbsp;</a> <a href="modifier_serie?monID=${mesSeries.id}">Modifier</a>
                 <br/>
             </c:forEach>
                 

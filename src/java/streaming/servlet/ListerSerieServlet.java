@@ -30,7 +30,7 @@ public class ListerSerieServlet extends HttpServlet {
 
         req.setAttribute("mesSeries", series);
 
-        req.getRequestDispatcher("lister_series.jsp").forward(req, resp);
+        req.getRequestDispatcher("lister_serie.jsp").forward(req, resp);
     }
 
 
