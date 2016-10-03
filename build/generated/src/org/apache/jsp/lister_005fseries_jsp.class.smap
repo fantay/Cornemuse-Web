@@ -1,10 +1,10 @@
 SMAP
-lister_005ffilms_jsp.java
+lister_005fseries_jsp.java
 JSP
 *S JSP
 *F
-+ 0 lister_films.jsp
-lister_films.jsp
++ 0 lister_series.jsp
+lister_series.jsp
 *L
 5,9:57
 13:125,7
@@ -12,9 +12,9 @@ lister_films.jsp
 20:151,7
 20,13:78
 32:177,11
-33:188,3
-34,2:191
+33:188,5
+34,2:193
 35,6:93
-40:217,7
+40:219,7
 40,7:101
 *E

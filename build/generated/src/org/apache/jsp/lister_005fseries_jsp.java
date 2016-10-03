@@ -4,7 +4,7 @@ import javax.servlet.*;
 import javax.servlet.http.*;
 import javax.servlet.jsp.*;
 
-public final class lister_005ffilm_jsp_jsp extends org.apache.jasper.runtime.HttpJspBase
+public final class lister_005fseries_jsp extends org.apache.jasper.runtime.HttpJspBase
     implements org.apache.jasper.runtime.JspSourceDependent {
 
   private static final JspFactory _jspxFactory = JspFactory.getDefaultFactory();
@@ -60,17 +60,17 @@ public final class lister_005ffilm_jsp_jsp extends org.apache.jasper.runtime.Htt
       out.write("\n");
       out.write("<!DOCTYPE html>\n");
       out.write("<html>\n");
-      out.write("\n");
+      out.write("    \n");
       out.write("    <head>\n");
       out.write("        ");
       if (_jspx_meth_c_import_0(_jspx_page_context))
         return;
       out.write("\n");
-      out.write("        <title>JSP Page</title>\n");
+      out.write("        <title>Liste des séries</title>\n");
       out.write("    </head>\n");
-      out.write("\n");
+      out.write("    \n");
       out.write("    <body>\n");
-      out.write("\n");
+      out.write("        \n");
       out.write("        <div class=\"menu\">\n");
       out.write("            ");
       if (_jspx_meth_c_import_1(_jspx_page_context))
@@ -78,15 +78,20 @@ public final class lister_005ffilm_jsp_jsp extends org.apache.jasper.runtime.Htt
       out.write("\n");
       out.write("        </div>\n");
       out.write("        <br/>\n");
+      out.write("        \n");
+      out.write("        <h1>Liste des series</h1>\n");
+      out.write("        \n");
       out.write("        <div class=\"titre\">\n");
-      out.write("            <h1>Liste des films</h1>\n");
+      out.write("           \n");
       out.write("        </div>     \n");
       out.write("        <br/>\n");
       out.write("        <div class=\"contenu\">\n");
+      out.write("            \n");
       out.write("            ");
       if (_jspx_meth_c_forEach_0(_jspx_page_context))
         return;
       out.write("\n");
+      out.write("                \n");
       out.write("        </div>\n");
       out.write("        <br/>\n");
       out.write("        <div class=\"pied\">\n");
@@ -95,9 +100,9 @@ public final class lister_005ffilm_jsp_jsp extends org.apache.jasper.runtime.Htt
         return;
       out.write("\n");
       out.write("        </div>\n");
-      out.write("\n");
+      out.write("        \n");
       out.write("    </body>\n");
-      out.write("\n");
+      out.write("    \n");
       out.write("</html>\n");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){
@@ -172,8 +177,8 @@ public final class lister_005ffilm_jsp_jsp extends org.apache.jasper.runtime.Htt
     org.apache.taglibs.standard.tag.rt.core.ForEachTag _jspx_th_c_forEach_0 = (org.apache.taglibs.standard.tag.rt.core.ForEachTag) _jspx_tagPool_c_forEach_var_items.get(org.apache.taglibs.standard.tag.rt.core.ForEachTag.class);
     _jspx_th_c_forEach_0.setPageContext(_jspx_page_context);
     _jspx_th_c_forEach_0.setParent(null);
-    _jspx_th_c_forEach_0.setItems((java.lang.Object) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${mesFilms}", java.lang.Object.class, (PageContext)_jspx_page_context, null));
-    _jspx_th_c_forEach_0.setVar("monFilm");
+    _jspx_th_c_forEach_0.setItems((java.lang.Object) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${mesSeries}", java.lang.Object.class, (PageContext)_jspx_page_context, null));
+    _jspx_th_c_forEach_0.setVar("mesSeries");
     int[] _jspx_push_body_count_c_forEach_0 = new int[] { 0 };
     try {
       int _jspx_eval_c_forEach_0 = _jspx_th_c_forEach_0.doStartTag();
@@ -181,8 +186,11 @@ public final class lister_005ffilm_jsp_jsp extends org.apache.jasper.runtime.Htt
         do {
           out.write("\n");
           out.write("                ");
-          out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${monFilm.titre}", java.lang.String.class, (PageContext)_jspx_page_context, null));
-          out.write("<br/>\n");
+          out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${mesSeries.titre}", java.lang.String.class, (PageContext)_jspx_page_context, null));
+          out.write("</a> <a href=\"supprimer_film?monID=");
+          out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${mesSeries.id}", java.lang.String.class, (PageContext)_jspx_page_context, null));
+          out.write("\">Supprimer</a>\n");
+          out.write("                <br/>\n");
           out.write("            ");
           int evalDoAfterBody = _jspx_th_c_forEach_0.doAfterBody();
           if (evalDoAfterBody != javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN)
